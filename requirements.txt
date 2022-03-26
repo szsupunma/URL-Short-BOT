@@ -1,0 +1,8 @@
+tgcrypto
+requests
+ffmpeg-python
+sqlalchemy~=1.3.23
+psycopg2-binary
+pykeyboard
+pyrogram
+
