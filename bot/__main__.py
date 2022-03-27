@@ -19,11 +19,13 @@ keyboard = InlineKeyboardMarkup(
 async def startmsg(_, message):
     users = count_users() 
     START_TEXT = f"""
-Hello !
+👋 Hello !
+**URL-Short-BOT** can short your long URL in seconds, It also lets you know how many times your link has been visited !
 
-URL-Short-BOT can short your long URL in seconds, It also lets you know how many times your link has been visited !
+🔗 **Short** : /short Longurl
+📊 **Statics** : /statics shorturl
+✨ **Total Users** : `{users}`
 
-• **Total Users** : `{users}`
 [API](https://t.me/G99Solutions/319) | [support-Chat](https://t.me/slbotzone)
 """
     await sz.send_message(message.chat.id, START_TEXT,disable_web_page_preview=True, reply_markup=keyboard)
