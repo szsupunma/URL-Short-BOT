@@ -16,17 +16,18 @@ async def shorthere(_, message):
     await sz.send_message(message.chat.id,f"""
 **{title}**
 
-• Shorturl - {shorturl}
-• Longurl - {longurl}
-• Date - `{date}`
+🖇  Shorturl - {shorturl}
+🔗 Longurl - {longurl}
+📆 Date - `{date}`
 
-► You can get how many times your link has been visited
+😊 You can get how many times your link has been visited
 Giving this command to @szurlshortbot.
 
 ● Command : `/statics {shorturl}`
 
 [API](https://t.me/G99Solutions/319) | [support-Chat](https://t.me/slbotzone)
-""")
+
+""",disable_web_page_preview=True)
 
 @sz.on_message(filters.command("statics"))
 @sz_checks
@@ -39,12 +40,12 @@ async def shorthere(_, message):
     title = info['title']
     statics = info['clicks']
     await sz.send_message(message.chat.id,f"""
-**{title}** 📊
+**{title}**
 
-• statics - {statics}
-• Shorturl - {shorturl}
-• Longurl - {longurl}
-• Date - `{date}`
+📊 statics - {statics}
+🖇 Shorturl - {shorturl}
+🔗 Longurl - {longurl}
+📆 Date - `{date}`
 
 [API](https://t.me/G99Solutions/319) | [support-Chat](https://t.me/slbotzone)
-""")
+""",disable_web_page_preview=True)
