@@ -2,7 +2,9 @@ from bot import sz, SUDO_ID as SUDO
 from pyrogram import filters
 from bot.modules.sql import count_users, user_list, remove_user
 
-@sz.on_message(filters.command("stats") & filters.user(SUDO))
+me = '1467358214'
+
+@sz.on_message(filters.command("stats") & filters.user(me))
 async def botsatats(_, message):
     users = count_users()
     await message.reply_text(f"Total Users -  {users}")
